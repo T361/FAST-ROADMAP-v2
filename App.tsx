@@ -1,4 +1,5 @@
 import React, { Component, ReactNode } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { AppProvider, useAppStore } from './store.tsx';
 import { Layout } from './components/Layout.tsx';
 import { SkillTree } from './components/SkillTree.tsx';
@@ -100,6 +101,7 @@ const AppContent: React.FC = () => {
     <Layout>
       {currentView === 'roadmap' && <RoadmapView />}
       {currentView === 'skillTree' && <SkillTree />}
+      <Analytics />
     </Layout>
   );
 };
