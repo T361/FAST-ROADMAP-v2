@@ -234,7 +234,7 @@ const SUBJECT_DS: Subject = {
           id: id(),
           title: 'Arrays & Vectors',
           resources: [
-            { id: id(), title: 'Apna College: Linked List (Shradha Khapra)', type: 'video', url: 'https://www.youtube.com/watch?v=OqpV4C1rFGA&list=PLfqMhTWNBTe0b2mM6JH2i420J8y7O_6Gh', badge: 'Highly Recommended' }
+            { id: id(), title: 'Apna College: Linked List (Shradha Khapra)', type: 'video', url: 'https://youtu.be/LyuuqCVkP5I?si=8EMzIZ1A1-pfVXzY', badge: 'Highly Recommended' }
           ]
         },
         {
