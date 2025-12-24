@@ -23,7 +23,7 @@ Built with the **"Zen Obsidian"** design philosophy, it focuses on clarity, dept
 ## ✨ Features
 
 ### 🎓 Curated Curriculum Engine
-Hardcoded, verified paths for the most critical subjects (Semesters 2, 3 & 4):
+Hardcoded, verified paths for the most critical subjects :
 
 - **CS2001 Data Structures:**
   - Direct integration with the **Abdul Bari Deep Dive Archive**.
@@ -36,7 +36,7 @@ Hardcoded, verified paths for the most critical subjects (Semesters 2, 3 & 4):
 - **SE1001 Intro to Software Engineering:**
   - Exclusive lectures from **Bilal Khalid Dar**.
 
-- **Mathematics (Calculus, LA, Prob & Stats):**
+- **Mathematics (Calculus, LA):**
   - **The Educational Math Channel** & **Bushra's Coaching**.
 
 ### 🧠 Senior Wisdom Injection
