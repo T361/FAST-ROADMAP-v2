@@ -232,6 +232,13 @@ const SUBJECT_DS: Subject = {
       topics: [
         {
           id: id(),
+          title: 'Arrays & Vectors',
+          resources: [
+            { id: id(), title: 'Apna College: C++ DSA Course', type: 'video', url: 'https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2mM6JH2i420J8y7O_6Gh', badge: 'Full Playlist' }
+          ]
+        },
+        {
+          id: id(),
           title: 'Linked Lists',
           resources: [
             { id: id(), title: 'Abdul Bari: Linked Lists', type: 'video', url: 'https://www.youtube.com/results?search_query=Abdul+Bari+Linked+List', badge: 'Legendary' },
@@ -308,6 +315,29 @@ const SUBJECT_LA: Subject = {
   ]
 };
 
+const SUBJECT_PHYSICS: Subject = {
+  id: 'ph-1001',
+  code: 'PH-1001',
+  title: 'Applied Physics',
+  credits: 3,
+  description: 'Mechanics, Electromagnetism, and Optics. Understanding the physical world.',
+  modules: [
+    {
+      id: id(),
+      title: 'Physics Fundamentals',
+      topics: [
+        {
+          id: id(),
+          title: 'Comprehensive Course',
+          resources: [
+            { id: id(), title: 'Fakhar STEM: Applied Physics', type: 'video', url: 'https://www.youtube.com/results?search_query=Fakhar+STEM+Sphere+Applied+Physics', badge: 'Playlist' }
+          ]
+        }
+      ]
+    }
+  ]
+};
+
 const SUBJECT_SE: Subject = {
   id: 'se-1001',
   code: 'SE-1001',
@@ -340,5 +370,6 @@ export const SUBJECTS: Subject[] = [
   SUBJECT_MVC,
   SUBJECT_DS,
   SUBJECT_LA,
+  SUBJECT_PHYSICS,
   SUBJECT_SE
 ];

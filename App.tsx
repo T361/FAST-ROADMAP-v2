@@ -3,7 +3,50 @@ import { AppProvider, useAppStore } from './store';
 import { Layout } from './components/Layout';
 import { SkillTree } from './components/SkillTree';
 import { SUBJECTS } from './constants';
-import { ArrowRight, Book } from 'lucide-react';
+import { ArrowRight, Book, AlertTriangle } from 'lucide-react';
+
+// Error Boundary Component
+class ErrorBoundary extends React.Component<{children: React.ReactNode}, {hasError: boolean, error: any}> {
+  constructor(props: any) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+
+  static getDerivedStateFromError(error: any) {
+    return { hasError: true, error };
+  }
+
+  componentDidCatch(error: any, errorInfo: any) {
+    console.error("Uncaught error:", error, errorInfo);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="p-8 text-white bg-obsidian-950 min-h-screen flex flex-col items-center justify-center font-sans">
+          <div className="bg-brand-danger/10 p-4 rounded-full mb-4">
+            <AlertTriangle className="w-12 h-12 text-brand-danger" />
+          </div>
+          <h1 className="text-3xl font-bold mb-4">Something went wrong</h1>
+          <p className="text-slate-400 mb-6 text-center max-w-md">
+            The application encountered a critical error. This usually happens due to corrupted local data or a connection issue.
+          </p>
+          <pre className="bg-obsidian-900 p-4 rounded text-xs font-mono text-slate-400 max-w-2xl overflow-auto w-full mb-6 border border-obsidian-800">
+            {this.state.error?.toString()}
+          </pre>
+          <button 
+            onClick={() => { localStorage.clear(); window.location.reload(); }}
+            className="px-6 py-3 bg-brand-primary text-white font-semibold rounded-lg hover:bg-indigo-600 transition-colors shadow-lg shadow-brand-primary/20"
+          >
+            Clear Data & Reload
+          </button>
+        </div>
+      );
+    }
+
+    return this.props.children;
+  }
+}
 
 const RoadmapView: React.FC = () => {
     const { selectSubject, setView } = useAppStore();
@@ -54,9 +97,11 @@ const AppContent: React.FC = () => {
 
 const App: React.FC = () => {
   return (
-    <AppProvider>
-      <AppContent />
-    </AppProvider>
+    <ErrorBoundary>
+        <AppProvider>
+          <AppContent />
+        </AppProvider>
+    </ErrorBoundary>
   );
 };
 

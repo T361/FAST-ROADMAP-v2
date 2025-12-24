@@ -23,9 +23,20 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
     const saved = localStorage.getItem('fast-roadmap-progress');
     if (saved) {
       try {
-        setUserProgress(JSON.parse(saved));
+        const parsed = JSON.parse(saved);
+        // Safely merge to ensure all required fields exist
+        if (parsed && typeof parsed === 'object') {
+            setUserProgress({
+                ...initialProgress,
+                ...parsed,
+                completedResources: Array.isArray(parsed.completedResources) ? parsed.completedResources : [],
+                courseGrades: parsed.courseGrades || initialProgress.courseGrades
+            });
+        }
       } catch (e) {
         console.error("Failed to load progress", e);
+        // If corrupt, clear it
+        localStorage.removeItem('fast-roadmap-progress');
       }
     }
   }, []);
