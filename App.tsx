@@ -1,12 +1,12 @@
-import React from 'react';
-import { AppProvider, useAppStore } from './store';
-import { Layout } from './components/Layout';
-import { SkillTree } from './components/SkillTree';
-import { SUBJECTS } from './constants';
+import React, { Component, ReactNode } from 'react';
+import { AppProvider, useAppStore } from './store.tsx';
+import { Layout } from './components/Layout.tsx';
+import { SkillTree } from './components/SkillTree.tsx';
+import { SUBJECTS } from './constants.ts';
 import { ArrowRight, Book, AlertTriangle } from 'lucide-react';
 
 interface ErrorBoundaryProps {
-  children: React.ReactNode;
+  children?: ReactNode;
 }
 
 interface ErrorBoundaryState {
@@ -15,11 +15,11 @@ interface ErrorBoundaryState {
 }
 
 // Error Boundary Component
-class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundaryState> {
-  constructor(props: ErrorBoundaryProps) {
-    super(props);
-    this.state = { hasError: false, error: null };
-  }
+class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
+  public state: ErrorBoundaryState = {
+    hasError: false,
+    error: null
+  };
 
   static getDerivedStateFromError(error: any): ErrorBoundaryState {
     return { hasError: true, error };

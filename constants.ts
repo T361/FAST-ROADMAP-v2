@@ -1,4 +1,4 @@
-import { Subject } from './types';
+import { Subject } from './types.ts';
 
 // Helper to generate IDs
 const id = () => Math.random().toString(36).substr(2, 9);

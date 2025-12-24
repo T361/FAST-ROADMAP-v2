@@ -1,8 +1,8 @@
 import React from 'react';
-import { useAppStore } from '../store';
-import { SUBJECTS } from '../constants';
+import { useAppStore } from '../store.tsx';
+import { SUBJECTS } from '../constants.ts';
 import { CheckCircle2, Circle, PlayCircle, FileText, ChevronLeft, BookOpen, Monitor } from 'lucide-react';
-import { Subject, Module, Topic, Resource } from '../types';
+import { Subject, Module, Topic, Resource } from '../types.ts';
 
 export const SkillTree: React.FC = () => {
   const { selectedSubjectId, setView, toggleResource, userProgress } = useAppStore();
@@ -99,7 +99,7 @@ const ModuleNode: React.FC<{
 
 const TopicCard: React.FC<{ 
     topic: Topic, 
-    userProgress: any,
+    userProgress: any, 
     toggleResource: any 
 }> = ({ topic, userProgress, toggleResource }) => {
     return (

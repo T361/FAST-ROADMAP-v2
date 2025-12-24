@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { AppState, UserProgress } from './types';
+import { AppState, UserProgress } from './types.ts';
 
 // Default State
 const initialProgress: UserProgress = {
