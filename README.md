@@ -31,7 +31,7 @@ Hardcoded, verified paths for the most critical subjects (Semesters 2, 3 & 4):
   - **Striver's A2Z DSA Sheet** for interview prep.
 
 - **CS1004 Object Oriented Programming:**
-  - **CodeBeauty** & **CodeWithHarry** (C++ specific playlists).
+  - **CodeBeauty**  (C++ specific playlists).
 
 - **SE1001 Intro to Software Engineering:**
   - Exclusive lectures from **Bilal Khalid Dar**.
@@ -56,9 +56,9 @@ Aggregated, high-value advice from Reddit and senior batches, injected contextua
 
 | Layer | Technology |
 | :--- | :--- |
-| **Framework** | **Next.js 14** (App Router, Server Components) |
+| **Framework** | **REACT.JS** |
 | **Styling** | **Tailwind CSS** (Custom Zen Palette) |
-| **Language** | **TypeScript** (Strict Mode) |
+| **Language** | **JAVASCRIPT** (Strict Mode) |
 | **Icons** | **Lucide React** (Vector Optimized) |
 | **Deployment** | **Vercel / Railway** |
 
