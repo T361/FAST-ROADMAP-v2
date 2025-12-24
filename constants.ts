@@ -234,6 +234,7 @@ const SUBJECT_DS: Subject = {
           id: id(),
           title: 'Arrays & Vectors',
           resources: [
+            { id: id(), title: 'Abdul Bari: Mastery Archive', type: 'video', url: 'https://archive.org/download/udemy-abdul-bari-c-c-mastering-data-structures-rutracker-6171482/Udemy%2C%20Abdul%20Bari%20-%20Mastering%20Data%20Structures%20%26%20Algorithms%20using%20C%20and%20C%2B%2B%20%2806.2019%29/', badge: 'The Grail' },
             { id: id(), title: 'Apna College: Linked List (Shradha Khapra)', type: 'video', url: 'https://youtu.be/LyuuqCVkP5I?si=8EMzIZ1A1-pfVXzY', badge: 'Highly Recommended' }
           ]
         },
