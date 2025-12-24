@@ -5,7 +5,7 @@
 <div align="center">
 
 ![Status](https://img.shields.io/badge/status-production--ready-success?style=flat-square)
-![Stack](https://img.shields.io/badge/stack-Next.js_14_App_Router-black?style=flat-square)
+![Stack](https://img.shields.io/badge/stack-REACT.JS-black?style=flat-square)
 ![Design](https://img.shields.io/badge/design-Zen_Obsidian-purple?style=flat-square)
 
 </div>
@@ -60,7 +60,7 @@ Aggregated, high-value advice from Reddit and senior batches, injected contextua
 | **Styling** | **Tailwind CSS** (Custom Zen Palette) |
 | **Language** | **JAVASCRIPT** (Strict Mode) |
 | **Icons** | **Lucide React** (Vector Optimized) |
-| **Deployment** | **Vercel / Railway** |
+| **Deployment** | **Vercel** |
 
 ---
 
