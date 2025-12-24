@@ -1,20 +1,78 @@
+# 🌌 FAST Roadmap v2.0
+
+> **The Definitive Academic Compass for FAST-NU Students.**
+
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+
+![Status](https://img.shields.io/badge/status-production--ready-success?style=flat-square)
+![Stack](https://img.shields.io/badge/stack-REACT.JS-black?style=flat-square)
+![Design](https://img.shields.io/badge/design-Zen_Obsidian-purple?style=flat-square)
+
 </div>
 
-# Run and deploy your AI Studio app
+---
 
-This contains everything you need to run your app locally.
+## 💎 The Vision
 
-View your app in AI Studio: https://ai.studio/apps/drive/1IeNhsZ7Q-hqkcnLDBPfyCTVVgWtO1PMN
+**FAST Roadmap** is a high-fidelity, engineering-first learning platform built specifically for **FAST-NU Software Engineering students**. It replaces scattered WhatsApp links and Drive folders with a unified, professional dashboard.
 
-## Run Locally
+Built with the **"Zen Obsidian"** design philosophy, it focuses on clarity, depth, and performance.
 
-**Prerequisites:**  Node.js
+---
 
+## ✨ Features
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 🎓 Curated Curriculum Engine
+Hardcoded, verified paths for the most critical subjects (Semesters 2, 3 & 4):
+
+- **CS2001 Data Structures:**
+  - Direct integration with the **Abdul Bari Deep Dive Archive**.
+  - **Apna College** C++ Playlist.
+  - **Striver's A2Z DSA Sheet** for interview prep.
+
+- **CS1004 Object Oriented Programming:**
+  - **CodeBeauty** & **CodeWithHarry** (C++ specific playlists).
+
+- **SE1001 Intro to Software Engineering:**
+  - Exclusive lectures from **Bilal Khalid Dar**.
+
+- **Mathematics (Calculus, LA):**
+  - **The Educational Math Channel** & **Bushra's Coaching**.
+
+### 🧠 Senior Wisdom Injection
+Aggregated, high-value advice from Reddit and senior batches, injected contextually:
+- *"GPA is strictly relative. Your competition is your class."*
+- *"Code on paper. The exams require writing syntax without an IDE."*
+- *"Trust only Wonder.site for past papers."*
+
+### 🛠️ Engineering-First Tools
+- **Global Advice Cards:** Critical tips on Exam Strategy & Academic Survival.
+- **Resource Linking:** Direct, clean links to YouTube playlists and Archives.
+- **Mobile-First Navigation:** Thumb-friendly bottom dock for study on the go.
+
+---
+
+## ⚡ Tech Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Framework** | **REACT.JS** (App Router, Server Components) |
+| **Styling** | **Tailwind CSS** (Custom Zen Palette) |
+| **Language** | **TypeScript** (Strict Mode) |
+| **Icons** | **Lucide React** (Vector Optimized) |
+| **Deployment** | **Vercel** |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm / yarn / pnpm
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/yourusername/fast-roadmap.git](https://github.com/yourusername/fast-roadmap.git)
+   cd fast-roadmap
