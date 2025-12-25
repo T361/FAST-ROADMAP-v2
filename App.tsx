@@ -4,6 +4,7 @@ import { Layout } from './components/Layout.tsx';
 import { SkillTree } from './components/SkillTree.tsx';
 import { SUBJECTS } from './constants.ts';
 import { ArrowRight, Book, AlertTriangle } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 interface ErrorBoundaryProps {
   children?: ReactNode;
@@ -109,6 +110,7 @@ const App: React.FC = () => {
     <ErrorBoundary>
         <AppProvider>
           <AppContent />
+          <SpeedInsights />
         </AppProvider>
     </ErrorBoundary>
   );
